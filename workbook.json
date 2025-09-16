@@ -1,0 +1,45 @@
+{
+    "version": "Notebook/1.0",
+    "items": [
+        {
+            "type": 10,
+            "content": {
+                "chartId": "workbook85d2d5d7-0e4c-4c24-8d42-47bf8300bdc0",
+                "version": "MetricsItem/2.0",
+                "size": 0,
+                "chartType": 2,
+                "resourceType": "microsoft.storage/storageaccounts",
+                "metricScope": 0,
+                "resourceIds": [
+                    "${storageAccountId}"
+                ],
+                "timeContext": {
+                    "durationMs": 3600000
+                },
+                "metrics": [
+                    {
+                        "namespace": "microsoft.storage/storageaccounts",
+                        "metric": "microsoft.storage/storageaccounts-Transaction-Transactions",
+                        "aggregation": 1,
+                        "splitBy": [
+                            "ApiName"
+                        ],
+                        "columnName": ""
+                    }
+                ],
+                "title": "Transactions by API name",
+                "showOpenInMe": true,
+                "gridSettings": {
+                    "rowLimit": 10000
+                }
+            },
+            "customWidth": "50",
+            "showPin": true,
+            "name": "Transaction by api name"
+        }
+    ],
+    "fallbackResourceIds": [
+        "${fallbackResourceId}"
+    ],
+    "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/workbook.json"
+}
